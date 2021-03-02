@@ -1,5 +1,45 @@
+
 p {
     color: blue;
     font-size: 2em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Manrope', sans-serif;
+}
+figcaption{
+    color:blue;
+    font-family: 'Manrope', sans-serif;
+}
+.nav ul{
+    display: inline-block;
+}
+
+.nav li{
+    list-style-type: none;
+    float: left;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.nav a{
+    text-decoration: none;
+    color: red;
+}
+
+.nav a:hover{
+    color: blue;
+}
+
+.row{
+    width: 100%;
+}
+
+
+.image-and-caption{
+display: inline-block;
+width: 50%;
+}
+
+.text{
+    vertical-align: top;
+    width: 40%;
+    display: inline-block;
 }
