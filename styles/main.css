@@ -1,13 +1,16 @@
 
+/* paragraph css */
 p {
     color: blue;
     font-size: 2em;
     font-family: 'Manrope', sans-serif;
 }
+/* caption css */
 figcaption{
     color:blue;
     font-family: 'Manrope', sans-serif;
 }
+/* navigations css */
 .nav ul{
     display: inline-block;
 }
@@ -27,7 +30,7 @@ figcaption{
 .nav a:hover{
     color: blue;
 }
-
+/* about me page css */
 .row{
     width: 100%;
 }
@@ -42,4 +45,8 @@ width: 50%;
     vertical-align: top;
     width: 40%;
     display: inline-block;
+}
+
+.row .image-and-caption #soccer {
+    color: green;
 }
