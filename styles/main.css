@@ -61,3 +61,11 @@ width: 50%;
     color: blue;
     text-align: center;
 }
+
+/* button */
+button{
+    width: 6em;
+    height: 3em;
+    background-color: blue;
+    color: red;
+}
