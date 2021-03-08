@@ -36,8 +36,8 @@ figcaption{
 
 .nav a:hover{
     padding: 14px 16px;
-    background-color: rgb(0, 255, 0);
-    color: rgba(105, 0, 0, 0.712);
+    background-color: rgb(255, 0, 0);
+    color: rgba(17, 0, 255, 0.712);
 }
 /* about me page css */
 .row{
