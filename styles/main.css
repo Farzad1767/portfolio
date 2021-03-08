@@ -52,10 +52,6 @@ width: 50%;
     display: inline-block;
 }
 
-.row .image-and-caption #soccer {
-    color: green;
-}
-
 /* title */
 .title{
     color: blue;
