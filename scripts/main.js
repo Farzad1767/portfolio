@@ -140,8 +140,27 @@ function centuryFromYear() {
     century = Math.floor(year/100 + 1);  // Rounding down century
     document.getElementById('centuryFromYear').innerHTML = century;
 }
-function f8() {
-    alert("Script 8 in progress..");
+function thirdAngle() {
+    let angle1 = parseInt(prompt("Enter the first angle of your triangle"));
+    let angle2 = parseInt(prompt("Enter the second angle of your triangle"));
+    let totaloftheangles = angle1 + angle2;
+    let angle3 = "";
+    if(totaloftheangles >= 180){
+        angle3 = "Valid output because the triangle's total angle is 180";
+    }
+    else if(angle1 < 0 && angle2 < 0){
+        angle3 = "Angles are not positive";
+    }
+    else if(angle1 > 0 && angle2 < 0){
+        angle3 = "Angles are not positive";
+    }
+    else if(angle1 < 0 && angle2 > 0){
+        angle3 = "Angles are not positive";
+    }
+    else{
+        angle3 = 180 - (angle1 + angle2);
+    }
+    document.getElementById('thirdAngle').innerHTML = angle3;
 }
 
 
