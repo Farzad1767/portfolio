@@ -35,8 +35,8 @@ function welcome() {
 // function for buttons
 
 function largerNumber() {
-    let num1 = prompt("Enter the first number");
-    let num2 = prompt("Enter the second number");
+    let num1 = parseInt(prompt("Enter the first number"));
+    let num2 = parseInt(prompt("Enter the second number"));
     if (num1 > num2){
         output = num1;
     } else if (num2 == num1){
@@ -44,7 +44,7 @@ function largerNumber() {
     } else if (num2 > num1){
         output = num2;
     } else {
-        output = "Invalid input";
+        output = ('Invalid output');
     }
     document.getElementById('largerNum').innerHTML = output;
 }
@@ -102,19 +102,46 @@ function threeNumberSort() {
 function forSumThrees() {
     alert("Script 4 in progress..");
 }
-function f5() {
-    alert("Script 5 in progress..");
+function whileSumThrees() {
+    let total = 0;
+    let x = 0;
+    while (x < 1000) {
+        total += x;
+        x = x + 3;
+    }
+    document.getElementById('whileSumThrees').innerHTML = total;
 }
-function f6() {
-    alert("Script 6 in progress..");
+
+
+
+function tenFour() {
+    for(x = 1; x <= 100; x++){
+        if(x % 4 == 0 && x % 10 == 0){
+            console.log("TenFour")
+        }
+        else if(x % 4 === 0){
+            console.log("Four")
+        }
+        else if(x % 10 === 0){
+            console.log("Ten")
+        }
+        else{
+            console.log(x)
+        }
+
+    }
 }
-function f7() {
-    alert("Script 7 in progress..");
+
+// Input the year and output the century it was in
+
+function centuryFromYear() {
+    let year = prompt("Enter year and get the century of it");
+    let century = 0;
+    century = Math.floor(year/100 + 1);  // Rounding down century
+    document.getElementById('centuryFromYear').innerHTML = century;
 }
 function f8() {
     alert("Script 8 in progress..");
 }
-function f9() {
-    alert("Script 9 in progress..");
-}
+
 
