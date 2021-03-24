@@ -34,6 +34,8 @@ function welcome() {
 
 // function for buttons
 
+// Input 2 numbers Output the larger number
+
 function largerNumber() {
     let num1 = parseInt(prompt("Enter the first number"));
     let num2 = parseInt(prompt("Enter the second number"));
@@ -48,6 +50,9 @@ function largerNumber() {
     }
     document.getElementById('largerNum').innerHTML = output;
 }
+
+// Input three integers with different or same signs Output is the sign of the integers by multiplying
+
 function signOfProduct(){
     let x = parseInt(prompt("Enter the first number"));
     let y = parseInt(prompt("Enter the second number"));
@@ -72,6 +77,8 @@ function signOfProduct(){
         document.getElementById('signOfProduct').innerHTML = "The sign is -";
     }
 }
+
+// Input 3 numbers and output the numbers from ascending order
 
 function threeNumberSort() {
     let num1 = parseInt(prompt("Enter the first number"));
@@ -99,9 +106,22 @@ function threeNumberSort() {
     document.getElementById('threeNumberSort').innerHTML = numsorted;
 }
 
+// adding multiples of 3 with a for loop 
+
 function forSumThrees() {
-    alert("Script 4 in progress..");
+    let sum = 0;
+    for (let x = 0; x < 1000; x++)
+    
+    if (x % 3 === 0){
+    
+       sum += x;
+    }
+    document.getElementById('forSumThrees').innerHTML = sum;
 }
+
+
+// adding multiples of 3 with a while loop 
+
 function whileSumThrees() {
     let total = 0;
     let x = 0;
@@ -112,7 +132,7 @@ function whileSumThrees() {
     document.getElementById('whileSumThrees').innerHTML = total;
 }
 
-
+// replacing the multiples of 4 and 10 with the letters in the console
 
 function tenFour() {
     for(x = 1; x <= 100; x++){
@@ -140,6 +160,9 @@ function centuryFromYear() {
     century = Math.floor(year/100 + 1);  // Rounding down century
     document.getElementById('centuryFromYear').innerHTML = century;
 }
+
+// Input two angles of the right angled triangle and finding the third angle
+
 function thirdAngle() {
     let angle1 = parseInt(prompt("Enter the first angle of your triangle"));
     let angle2 = parseInt(prompt("Enter the second angle of your triangle"));
@@ -162,5 +185,3 @@ function thirdAngle() {
     }
     document.getElementById('thirdAngle').innerHTML = angle3;
 }
-
-
