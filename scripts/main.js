@@ -185,3 +185,21 @@ function thirdAngle() {
     }
     document.getElementById('thirdAngle').innerHTML = angle3;
 }
+
+// encrypting a message 
+
+function encryption() {
+    let input = prompt("Enter message");
+    let output = "";
+    input = input.split(" "); // splitting the input aka the message that the user has typed into seperate strings.
+    for (let x = 0; x < input.length; x++) { // tells you the lenght of the words and loops it until the statement is false.
+        if (input[x].length >= 2) {
+            output += 'jqtY' + (input[x]).slice(2) + '5Tji' + (input[x][0]) + 'j6R2' + (input[x][1]) + " ";
+        }
+        else {
+            output += 'if2Y' + (input[x][0]) + '1f5R7 ';
+        }
+    
+    }
+    document.getElementById('encryptedoutput').innerHTML = ("Encryption: " + output);
+}
